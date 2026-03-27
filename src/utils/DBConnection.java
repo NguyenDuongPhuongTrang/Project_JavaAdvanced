@@ -6,28 +6,26 @@ import java.sql.SQLException;
 
 public class DBConnection {
     private static DBConnection instance;
-    private Connection connection;
+    private static Connection connection = null;
 
-    private DBConnection(){
+    public static Connection getConnection(){
         try {
             String url = "jdbc:mysql://localhost:3306/cyber_game_db";
             String user = "root";
             String password = "061006";
 
-            connection = DriverManager.getConnection(url, user, password);
+            return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     public static DBConnection getInstance(){
-        if (instance == null){
-            instance = new DBConnection();
+        if (connection == null){
+            connection = getConnection();
         }
         return instance;
     }
 
-    public Connection getConnection() {
-        return connection;
-    }
 }
