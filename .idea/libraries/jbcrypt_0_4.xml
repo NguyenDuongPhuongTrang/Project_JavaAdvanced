@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="bytes-1.6.1">
+  <library name="jbcrypt-0.4">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/libs/bytes-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/jbcrypt-0.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

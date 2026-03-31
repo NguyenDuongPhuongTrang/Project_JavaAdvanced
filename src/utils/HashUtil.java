@@ -1,17 +1,14 @@
 package utils;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class HashUtil {
     public static String hashPassword(String password) {
-        BCrypt.Hasher hasher = BCrypt.withDefaults();
-        String hashPassword = hasher.hashToString(12, password.toCharArray());
-        return hashPassword;
+        String hashedPassword = org.mindrot.jbcrypt.BCrypt.hashpw(password, org.mindrot.jbcrypt.BCrypt.gensalt(10));
+        return hashedPassword;
     }
 
     public static boolean verifyPassword(String password, String hashedPassword) {
-        BCrypt.Result result = BCrypt.verifyer()
-                .verify(password.toCharArray(), hashedPassword);
-        return result.verified;
+        return org.mindrot.jbcrypt.BCrypt.checkpw(password, hashedPassword);
     }
 }

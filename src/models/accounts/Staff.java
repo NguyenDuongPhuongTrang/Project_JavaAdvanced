@@ -4,11 +4,13 @@ public class Staff {
     private String staffId;
     private String userId;
     private String name;
+    private String phone;
 
-    public Staff(String staffId, String userId, String name) {
+    public Staff(String staffId, String userId, String name, String phone) {
         this.staffId = staffId;
         this.userId = userId;
         this.name = name;
+        this.phone = phone;
     }
 
     public String getStaffId() {
@@ -33,5 +35,13 @@ public class Staff {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

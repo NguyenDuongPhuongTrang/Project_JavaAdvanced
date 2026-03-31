@@ -5,27 +5,17 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static DBConnection instance;
-    private static Connection connection = null;
+    private static final String URL = "jdbc:mysql://localhost:3306/cyber_game_db";
+    private static final String USER = "root";
+    private static final String PASSWORD = "061006";
 
-    public static Connection getConnection(){
+    public static Connection getConnection() {
+        Connection connection = null;
         try {
-            String url = "jdbc:mysql://localhost:3306/cyber_game_db";
-            String user = "root";
-            String password = "061006";
-
-            return DriverManager.getConnection(url, user, password);
+            connection = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return null;
+        return connection;
     }
-
-    public static DBConnection getInstance(){
-        if (connection == null){
-            connection = getConnection();
-        }
-        return instance;
-    }
-
 }

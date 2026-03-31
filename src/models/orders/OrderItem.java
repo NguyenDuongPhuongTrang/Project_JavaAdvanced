@@ -1,7 +1,5 @@
 package models.orders;
 
-import enums.ItemType;
-
 public class OrderItem {
     private String orderItemsId;
     private String orderId;

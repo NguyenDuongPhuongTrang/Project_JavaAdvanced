@@ -1,20 +1,25 @@
 package models.trans;
 
+import enums.PaymentMethod;
 import enums.TransType;
+
+import java.time.LocalDateTime;
 
 public class Transaction {
     private String transactionId;
     private String customerId;
     private double amount;
     private TransType type;
+    private PaymentMethod paymentMethod;
     private String description;
-    private String createdAt;
+    private LocalDateTime createdAt;
 
-    public Transaction(String transactionId, String customerId, double amount, TransType type, String description, String createdAt) {
+    public Transaction(String transactionId, String customerId, double amount, TransType type, PaymentMethod paymentMethod, String description, LocalDateTime createdAt) {
         this.transactionId = transactionId;
         this.customerId = customerId;
         this.amount = amount;
         this.type = type;
+        this.paymentMethod = paymentMethod;
         this.description = description;
         this.createdAt = createdAt;
     }
@@ -51,6 +56,14 @@ public class Transaction {
         this.type = type;
     }
 
+    public PaymentMethod getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(PaymentMethod paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -59,11 +72,11 @@ public class Transaction {
         this.description = description;
     }
 
-    public String getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 }

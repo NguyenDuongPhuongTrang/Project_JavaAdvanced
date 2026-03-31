@@ -2,5 +2,17 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_1.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_10.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_11.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_12.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_13.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_2.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_3.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_4.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_6.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_7.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_8.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0454d27-2e2f-4e5c-b794-93bc441082ae/console_9.sql" value="c0454d27-2e2f-4e5c-b794-93bc441082ae" />
   </component>
 </project>
